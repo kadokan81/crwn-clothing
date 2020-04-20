@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import HomePage from './pages/homePage/HomePage';
+import { Route, Switch } from 'react-router-dom';
+import HatsPage from './pages/hats/Hats.component';
+import './App.css';
 
 class App extends Component {
   state = {  }
@@ -6,7 +10,11 @@ class App extends Component {
     return ( 
 
       <div>
-        <h1>Wello</h1>
+        <Switch>
+            <Route exact  path = '/' component= {HomePage}/>
+            <Route path = '/hats' component= { HatsPage} />
+        </Switch>
+      
       </div>
      );
   }
