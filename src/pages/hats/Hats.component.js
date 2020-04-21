@@ -5,7 +5,7 @@ const HatsPage = () => {
     return (  
 
         <div className="div-page">
-            <h1>HATS PAGE</h1>
+            <h1> HATS PAGE</h1>
         </div>
     );
 }
